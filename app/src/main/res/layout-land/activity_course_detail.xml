@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/courseDetailActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewBase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/termDetailFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E9E6D9">
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="265dp"
+                    android:layout_height="198dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CourseNotesLabel">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/courseNoteTextView"
+                            android:layout_width="300dp"
+                            android:layout_height="100dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/lorem"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/assessmentTypeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/start"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/courseInstructorPhoneLabel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/assessmentEditDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/end"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/assessmentTypeLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/assessmentTypeLabel" />
+
+                <TextView
+                    android:id="@+id/assessmentTypeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/textview"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/assessmentTypeLabel"
+                    app:layout_constraintStart_toEndOf="@+id/assessmentTypeLabel"
+                    app:layout_constraintTop_toTopOf="@+id/assessmentTypeLabel" />
+
+                <TextView
+                    android:id="@+id/assessmentDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/textview"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/assessmentEditDateLabel"
+                    app:layout_constraintStart_toEndOf="@+id/assessmentEditDateLabel"
+                    app:layout_constraintTop_toTopOf="@+id/assessmentEditDateLabel" />
+
+                <TextView
+                    android:id="@+id/courseStatusLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/status"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/assessmentEditDateLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/assessmentEditDateLabel" />
+
+                <TextView
+                    android:id="@+id/courseStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/textview"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/courseStatusLabel"
+                    app:layout_constraintStart_toEndOf="@+id/courseStatusLabel"
+                    app:layout_constraintTop_toTopOf="@+id/courseStatusLabel" />
+
+                <TextView
+                    android:id="@+id/CourseNotesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/notes"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/scrollView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/termCoursesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/assessments"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/courseInstructorEmailLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/courseInstructorEmailLabel" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/courseAssessmentRecyclerView"
+                    android:layout_width="657dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+                    app:layout_constraintHorizontal_bias="0.065"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/termCoursesLabel"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/courseInstructorNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Instructor Name:"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/courseStatusLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/courseStatusLabel" />
+
+                <TextView
+                    android:id="@+id/courseInstructorPhoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Instructor Phone:"
+                    android:textColor="#000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/courseInstructorNameLabel" />
+
+                <TextView
+                    android:id="@+id/courseInstructorNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="TextView"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/courseInstructorNameLabel"
+                    app:layout_constraintStart_toEndOf="@+id/courseInstructorNameLabel"
+                    app:layout_constraintTop_toTopOf="@+id/courseInstructorNameLabel" />
+
+                <TextView
+                    android:id="@+id/courseInstructorPhoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="TextView"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/courseInstructorPhoneLabel"
+                    app:layout_constraintStart_toEndOf="@+id/courseInstructorPhoneLabel"
+                    app:layout_constraintTop_toTopOf="@+id/courseInstructorPhoneLabel" />
+
+                <TextView
+                    android:id="@+id/courseInstructorEmailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Instructor Email:"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/courseInstructorPhoneLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/courseInstructorPhoneLabel" />
+
+                <TextView
+                    android:id="@+id/courseInstructorEmailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="TextView"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/courseInstructorEmailLabel"
+                    app:layout_constraintStart_toEndOf="@+id/courseInstructorEmailLabel"
+                    app:layout_constraintTop_toTopOf="@+id/courseInstructorEmailLabel" />
+
+                <ImageButton
+                    android:id="@+id/notifyStartBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ic_baseline_notifications_active_24"
+                    android:backgroundTint="#40E7BB59"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/assessmentTypeTextView"
+                    app:layout_constraintStart_toEndOf="@+id/assessmentTypeTextView"
+                    app:layout_constraintTop_toTopOf="@+id/assessmentTypeTextView"
+                    app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+                <ImageButton
+                    android:id="@+id/notifyEndBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ic_baseline_notifications_active_24"
+                    android:backgroundTint="@color/almostWhite"
+                    app:layout_constraintBottom_toBottomOf="@+id/assessmentDateText"
+                    app:layout_constraintStart_toEndOf="@+id/assessmentDateText"
+                    app:layout_constraintTop_toTopOf="@+id/assessmentDateText"
+                    app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editAssessmentFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_edit_36"
+        app:backgroundTint="#E7BB59"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

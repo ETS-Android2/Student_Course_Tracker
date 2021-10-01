@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wgu.C196_StudentCourseTracker_RonMercier">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.C196_StudentCourseTracker_RonMercier">
+        <receiver
+            android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.MyNotificationBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.InstructorActivities.InstructorAddEditActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.InstructorActivities.InstructorDetailActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.InstructorActivities.InstructorActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.AssessmentActivities.AssessmentAddEditActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.AssessmentActivities.AssessmentDetailActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.AssessmentActivities.AssessmentActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.CourseActivities.CourseAddEditActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.TermActivities.TermAddEditActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.CourseActivities.CourseDetailActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.CourseActivities.CourseActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.TermActivities.TermDetailActivity" />
+        <activity android:name="edu.wgu.C196_StudentCourseTracker_RonMercier.UI.TermActivities.TermActivity" />
+    </application>
+
+</manifest>

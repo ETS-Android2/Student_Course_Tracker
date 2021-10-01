@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/termDetailFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9E6D9">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/assessmentTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/assesment_type"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/assessmentEditDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/end"
+            android:textColor="#000000"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/assessmentTypeLabel"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentTypeLabel" />
+
+        <TextView
+            android:id="@+id/assessmentTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview"
+            android:textColor="#000000"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="@+id/assessmentTypeLabel"
+            app:layout_constraintStart_toEndOf="@+id/assessmentTypeLabel"
+            app:layout_constraintTop_toTopOf="@+id/assessmentTypeLabel" />
+
+        <TextView
+            android:id="@+id/assessmentDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview"
+            android:textColor="#000000"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="@+id/assessmentEditDateLabel"
+            app:layout_constraintStart_toEndOf="@+id/assessmentEditDateLabel"
+            app:layout_constraintTop_toTopOf="@+id/assessmentEditDateLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editAssessmentFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="edit term"
+        android:src="@drawable/ic_baseline_edit_36"
+        tools:ignore="ImageContrastCheck" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

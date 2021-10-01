@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E6D9"
+    tools:context=".UI.MainActivity">
+
+    <Button
+        android:id="@+id/assessmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Assessments"
+        app:layout_constraintEnd_toStartOf="@+id/addAssessmentFromMainFAB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseBtn" />
+
+    <Button
+        android:id="@+id/courseBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Courses"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/addCoursesFromMainFAB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termBtn" />
+
+    <Button
+        android:id="@+id/termBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="8dp"
+        android:text="Terms"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/addTermsFromMainFAB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/instructorBtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="Instructor Contact Info"
+        app:layout_constraintEnd_toStartOf="@+id/addInstructorFromMainFAB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentBtn"
+        app:rippleColor="@color/secondaryColor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTermsFromMainFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="#E7BB59"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/termBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/termBtn"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addCoursesFromMainFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="#E7BB59"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/courseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/courseBtn"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addAssessmentFromMainFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="#E7BB59"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/assessmentBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/assessmentBtn"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addInstructorFromMainFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="#E7BB59"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/instructorBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/instructorBtn"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
