@@ -16,9 +16,10 @@ Terms were left out as this was not a requirement at the time of submission.
 Its easy enough to add if you like, just follow the code for the other two.
 (You can initiate the alerts by clicking on the bell icons on the corresponding screens!)
 
-To start the application:
+## To start the application:
 
-Open Android Studio and select Open Existing Android Studio Project
+<em>Note: App needs to be installed on either an emulator or an actual Android device
+  using Ice Cream Sandwich or more recent (minimum SDK version 15).</em>
 
 Navigate to your-directory and open it
 
