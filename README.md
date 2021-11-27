@@ -21,11 +21,10 @@ Its easy enough to add if you like, just follow the code for the other two.
 <em>Note: App needs to be installed on either an emulator or an actual Android device
   using Ice Cream Sandwich or more recent (minimum SDK version 15).</em>
 
-Navigate to your-directory and open it
-
-Make sure you have a debug-enabled device plugged in to your computer, or an emulator 
-downloaded in Android Studio
+More information on emulator process:
 https://developer.android.com/studio/run/emulator
+
+More information on device process:
 https://developer.android.com/studio/run/device
 
 Select a device from the dropdown menu in the toolbar if one is not already selected
