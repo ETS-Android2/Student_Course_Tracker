@@ -1,5 +1,5 @@
 # C196_StudentCourseTracker_RonMercier
-<center>WGU C196 Student Course Tracker Application</center>
+WGU C196 Student Course Tracker Application
 
 ![ScreenShot](https://github.com/RonMercier/Student_Course_Tracker/blob/master/StoryBoard.PNG)
 
