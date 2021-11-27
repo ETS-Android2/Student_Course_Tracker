@@ -1,6 +1,10 @@
 # C196_StudentCourseTracker_RonMercier
-WGU C196 Student Course Tracker Application
+<center>WGU C196 Student Course Tracker Application</center>
+
 ![ScreenShot](https://github.com/RonMercier/Student_Course_Tracker/blob/master/StoryBoard.PNG)
+
+
+
 An app for WGU students to track their term progress. Allows students to add and remove terms 
 and courses, change course statuses, add assessments to courses, and keep notes on both courses 
 and assessments. Supports Android versions 8.0+.
